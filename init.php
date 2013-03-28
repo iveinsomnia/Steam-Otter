@@ -1,6 +1,6 @@
 <?php
 $now = time();
-require('include.inc');
+require('include.php');
 $nextupdate = 24*60*60;
 if (file_exists($tempfile)) {
 	$filetime = filemtime($tempfile);
