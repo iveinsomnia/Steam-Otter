@@ -141,7 +141,6 @@ foreach ($json->apilist->interfaces as $inter) {
 			</ul>
 			<script>
 				$("#jqver").text(jQuery.fn.jquery);
-				 /*? $.ui.version;*/
 				$("#jquiver").text($.ui.version);
 			</script>
 		</div>
