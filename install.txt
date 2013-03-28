@@ -1,0 +1,31 @@
+=============
+=Steam Otter=
+=============
+Onk! Onk!
+Steam Otter is an advanced Steam Web API anylzer.
+
+
+========
+=Beta 1=
+========
+-First real commit.
+
+======
+=Todo=
+======
+-Logo
+-log system
+-comments
+-mini wiki
+-Test design on older web browser
+
+========
+=INSTAL=
+========
+open "include.inc"
+> include your datas.
+
+<<IMPORTANT: Don't forget to fill your Steam Web API Key!!>>
+<<Don't forget to make temp folder writable.>>
+
+-iveinsomnia. :)
