@@ -7,7 +7,7 @@ Comming very soon!
 
 Preview:
 
-Working WIP: http://sapi.techieanalyst.net/API/SteamWebAPI/
+Working WIP: http://sapi.techieanalyst.net/API/SteamOtter/
 
 -iveinsomnia
 
