@@ -24,7 +24,6 @@ Steam Otter is an advanced Steam Web API anylzer.
 ========
 open "include.inc"
 -> include your datas.
-->>create SQL DB "steam_otter" > import "steam_otter.sql"
 
 <<IMPORTANT: Don't forget to fill your Steam Web API Key!!>>
 <<Don't forget to make temp folder writable.>>

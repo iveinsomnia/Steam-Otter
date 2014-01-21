@@ -1,10 +1,8 @@
 <?php
-	$dbhost = "localhost";
-	$dblogin = "root";
-	$dbpass = "";
-	$dbname = "steam_otter";
-	$SOversion = "Beta 1";
-
-	$steamkey = ""; // Your Steam Web API key
+	if (!isset($_GET['steamkey'])) {
+		$steamkey = ""; // Your Steam Web API key /!\ VERRY IMPORTANT !!
+	} else {
+		$steamkey = $_GET['steamkey']; 
+	}
 	$tempfile="temp/otter.json"; // cache JSon file
 ?>
