@@ -1,4 +1,5 @@
 <?php
+	$SOversion = "Beta 1b";
 	if (!isset($_GET['steamkey'])) {
 		$steamkey = ""; // Your Steam Web API key /!\ VERRY IMPORTANT !!
 	} else {
