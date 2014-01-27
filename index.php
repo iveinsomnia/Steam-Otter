@@ -2,7 +2,8 @@
 include('init.php');
 
 if ($nextupdate <= 0) {
-	$url = "http://api.steampowered.com/ISteamWebAPIUtil/GetSupportedAPIList/v0001/?format=json&key=$steamkey";
+	if ($steamkey!=NULL) {$key = "&key=$steamkey";} else {$key="";}
+	$url = "http://api.steampowered.com/ISteamWebAPIUtil/GetSupportedAPIList/v0001/?format=json$key";
 	$ch = curl_init();
 	$curlhead = array("Accept-Encoding: gzip,deflate","Connection: Keep-Alive");
 	curl_setopt($ch, CURLOPT_ENCODING, "gzip");

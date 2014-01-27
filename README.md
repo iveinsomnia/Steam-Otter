@@ -3,7 +3,10 @@ Steam-Otter
 
 The Steam Web API analyzer.
 
-Comming very soon!
+Update b2b: 
+- Added no SQL Version Branch.
+- Added $key=xxxxxxxxx option.
+- Added no key feature.
 
 Preview:
 
