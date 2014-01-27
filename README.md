@@ -3,7 +3,12 @@ Steam-Otter
 
 The Steam Web API analyzer.
 
-Comming very soon!
+Update b2: 
+- Added no SQL Version Branch.
+- Added $key=xxxxxxxxx option.
+- Added no key feature.
+
+No SQL: https://github.com/iveinsomnia/Steam-Otter/tree/No-SQL
 
 Preview:
 

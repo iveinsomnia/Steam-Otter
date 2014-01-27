@@ -1,16 +1,9 @@
 <?php
 include('init.php');
 
-try {
-	$dbh = new PDO("mysql:host=$dbhost;dbname=$dbname", $dblogin, $dbpass);
-	$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	$sql = "";
-} catch (Exception $e) {
-    $dberr="<div class='err'><span class='icon-warning'> </span>SQL ERROR!</div>";
-}
-
 if ($nextupdate <= 0) {
-	$url = "http://api.steampowered.com/ISteamWebAPIUtil/GetSupportedAPIList/v0001/?format=json&key=$steamkey";
+	if ($steamkey!=NULL) {$key = "&key=$steamkey";} else {$key="";}
+	$url = "http://api.steampowered.com/ISteamWebAPIUtil/GetSupportedAPIList/v0001/?format=json$key";
 	$ch = curl_init();
 	$curlhead = array("Accept-Encoding: gzip,deflate","Connection: Keep-Alive");
 	curl_setopt($ch, CURLOPT_ENCODING, "gzip");
@@ -100,38 +93,7 @@ foreach ($json->apilist->interfaces as $inter) {
 			<h3><span class='icon-clock'> </span>Next update: <span id='nextupdate'></span><br /></h3>
 			<h3><span class='icon-flag'> </span><?= $i ?> API found</h3>
 			<h3><span class='icon-lab'> </span><?= $par ?> methods found</h3>
-			<h3><span class='icon-feed'> </span>3 new updates</h3>
 			<hr />
-			<div class='bupdate bu_new'>
-				<div>
-					<span class='icon-download t20'></span>
-				</div>
-				<div>
-					New: %param%<br />
-					ISteamWebAPIUtil/GetSupportedAPIList/v0001/<br />
-					0000/00/00 - 00:00:00
-				</div>
-			</div>
-			<div class='bupdate bu_update'>
-				<div>
-					<span class='icon-loop t20'></span>
-				</div>
-				<div>
-					Updated: %param%<br />
-					ISteamWebAPIUtil/GetSupportedAPIList/v0001/<br />
-					0000/00/00 - 00:00:00
-				</div>
-			</div>
-			<div class='bupdate bu_delete'>
-				<div>
-					<span class='icon-upload t20'></span>
-				</div>
-				<div>
-					Removed: %param%<br />
-					ISteamWebAPIUtil/GetSupportedAPIList/v0001/<br />
-					0000/00/00 - 00:00:00
-				</div>
-			</div>
 			<div><br />&copy;2013, Steam Otter <?= $SOversion ?> by iveinsomnia | <a href='https://github.com/iveinsomnia/Steam-Otter'><span class='icon-github'> </span>GitHub</a> | <span class='icon-info'> </span>About</div>
 			<ul>
 				<li><a href='http://jquery.com/'>JQuery</a> Version: <span id='jqver'></span></li>

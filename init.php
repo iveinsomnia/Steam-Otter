@@ -15,5 +15,4 @@ $i=0;
 $par=0;
 $inter = array();
 $theapilist = "";
-include('class.php');
 ?>
