@@ -6,6 +6,11 @@ Steam Otter is an advanced Steam Web API anylzer.
 
 
 ========
+=Beta 2=
+========
+-Removed SQL.
+
+========
 =Beta 1=
 ========
 -First real commit.
@@ -19,9 +24,9 @@ Steam Otter is an advanced Steam Web API anylzer.
 -mini wiki
 -Test design on older web browser
 
-========
-=INSTAL=
-========
+=========
+=INSTALL=
+=========
 open "include.inc"
 -> include your datas.
 
