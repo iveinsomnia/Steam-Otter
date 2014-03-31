@@ -12,7 +12,7 @@ No SQL: https://github.com/iveinsomnia/Steam-Otter/tree/No-SQL
 
 Preview:
 
-Working WIP: http://sapi.techieanalyst.net/API/SteamOtter/
+Working WIP: http://sapi.techieanalyst.net/API/SteamOtter/index.php
 
 -iveinsomnia
 
